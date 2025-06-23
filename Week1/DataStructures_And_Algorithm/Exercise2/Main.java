@@ -1,4 +1,4 @@
-package digi_dsa;
+package dsa;
 
 
 public class Product implements Comparable {
