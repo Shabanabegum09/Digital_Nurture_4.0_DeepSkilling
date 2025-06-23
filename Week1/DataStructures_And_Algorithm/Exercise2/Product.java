@@ -1,7 +1,7 @@
 package dsa;
 
 //Product.java
-public class Product {
+public class Product implements Comparable {
  private int productId;
  private String productName;
  private String category;
@@ -19,5 +19,10 @@ public class Product {
  @Override
  public String toString() {
      return productId + " - " + productName + " (" + category + ")";
+ }
+ @Override
+ public int compareTo(Object o)
+ {
+  return this.productName.compareToIgnoreCase(((Product)o).productName);
  }
 }
